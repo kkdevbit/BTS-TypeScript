@@ -1,5 +1,6 @@
-import Details from "./Details";
-import { Singer } from "../App";
+import Details from "../detail/Details";
+import { Singer } from "../../App";
+import "./list.css";
 
 type ListType = {
   singerList: Singer[];
@@ -9,33 +10,15 @@ type ListType = {
 
 const List = ({ singerList, selectedSinger, setSelectedSinger }: ListType) => {
   return (
-    <div
-      style={{
-        height: "100vh",
-      }}
-    >
-      <div
-        style={{
-          padding: "20px 0",
-          margin: "auto",
-          marginTop: "20px",
-          width: "20%",
-          borderRadius: "10px",
-          backgroundColor: "#96E5D1",
-          alignItems: "center",
-        }}
-      >
+    <div className="list-container">
+      <div className="list">
+        <h2>Singers</h2>
         {singerList.map((singer) => {
           return (
             <p
+              className="singer-list"
+              key={singer.id}
               title="Click to see Details"
-              style={{
-                cursor: "pointer",
-                fontSize: "20px",
-                fontWeight: "bold",
-                marginLeft: "20%",
-                textAlignLast: "left",
-              }}
               onClick={() => setSelectedSinger(singer)}
             >
               {singer.name}

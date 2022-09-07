@@ -1,0 +1,24 @@
+.list-container {
+  height: 100vh;
+}
+
+.list {
+  padding: 0 0 20px;
+  margin: auto;
+  margin-bottom: 60px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #96e5d1;
+  align-items: center;
+}
+h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.singer-list {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20%;
+  text-align-last: left;
+}
