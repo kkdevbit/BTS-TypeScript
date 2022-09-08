@@ -10,7 +10,7 @@ type ListType = {
 
 const List = ({ singerList, selectedSinger, setSelectedSinger }: ListType) => {
   return (
-    <div className="list-container">
+    <>
       <div className="list">
         <h2>Singers</h2>
         {singerList.map((singer) => {
@@ -29,10 +29,9 @@ const List = ({ singerList, selectedSinger, setSelectedSinger }: ListType) => {
 
       <br />
       <hr />
-      <div>
-        <Details selectedSinger={selectedSinger} />
-      </div>
-    </div>
+
+      <Details selectedSinger={selectedSinger} />
+    </>
   );
 };
 export default List;

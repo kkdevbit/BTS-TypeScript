@@ -21,13 +21,11 @@ function App() {
   const [selectedSinger, setSelectedSinger] = useState<Singer>(singers[0]);
 
   return (
-    <div className="App">
-      <List
-        singerList={singerList}
-        selectedSinger={selectedSinger}
-        setSelectedSinger={setSelectedSinger}
-      />
-    </div>
+    <List
+      singerList={singerList}
+      selectedSinger={selectedSinger}
+      setSelectedSinger={setSelectedSinger}
+    />
   );
 }
 

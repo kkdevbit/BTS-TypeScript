@@ -3,9 +3,11 @@
 }
 
 .list {
-  padding: 0 0 20px;
+  padding: 20px 0;
+
   margin: auto;
-  margin-bottom: 60px;
+  margin-top: 80px;
+  margin-bottom: 70px;
   width: 20%;
   border-radius: 10px;
   background-color: #96e5d1;
@@ -13,7 +15,7 @@
 }
 h2 {
   text-decoration: underline;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .singer-list {
   cursor: pointer;
